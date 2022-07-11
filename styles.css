@@ -1,0 +1,10 @@
+header {
+    font-weight: bolder;
+    font-size: 32px;
+    
+}
+#etchContainer {
+    display: flex;
+    background-color: aqua;
+    width: 600px; height: 500px;
+}
