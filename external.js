@@ -9,4 +9,9 @@ for (i=0; i<256; i++){
 }
 }
 
+const square= document.querySelector('div'); 
+square.addEventListener('mouseover', function(e) {
+    e.target.classList.replace('square','color');
+});
+
 createCanvas()
