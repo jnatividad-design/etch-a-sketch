@@ -9,7 +9,22 @@ body {
 h1 {
     font-weight: bolder;
     font-size: 50px;
-    
+}
+
+.container {display: flex;}
+.content {display: flex;
+flex-direction: column;
+margin-top: 25px;
+}
+
+label {
+    margin: 5px;
+}
+
+button {
+    margin: 5px;
+    height: 20px;
+    width: 70px;
 }
 #etchContainer {
     margin: 25px 40px;
@@ -27,4 +42,4 @@ h1 {
 }
 .square 
 {background-color: white;
-border: 1px solid white;}
+border: 1px solid black;}
