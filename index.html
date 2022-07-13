@@ -16,9 +16,13 @@
         <div class="container">
             <div class="content">
                 <label>Change Grid size here (pick size from 1-100)</label>
-                <input [type=number] id="userInput"/>
+                <input [type=number] id="userInput" max="100" min="1"/>
                 <button id="submit">Submit</button>
                 <button id="reset">Reset</button>
+                <label class="switch" id="rainbow">Rainbow
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                  </label>
             </div>
             <div id="etchContainer">
             </div>

@@ -4,6 +4,8 @@ const userInput = document.getElementById('userInput')
 console.log(document.getElementById('userInput') !==null)
 const reset = document.getElementById('reset')
 console.log(document.getElementById('userInput') !==null)
+const submit = document.getElementById('submit');
+console.log(document.getElementById('submit') !==null)
 
 function createCanvas (){  
 for (i=0; i<256; i++){
@@ -22,11 +24,11 @@ function updateCanvas () {
     etchContainer.innerHTML='';
     etchContainer.style.setProperty(
         'grid-template-columns',
-        `repeat($userInput.value},1fr)`
-    )
+        `repeat(${userInput.value},1fr)`
+    );
     etchContainer.style.setProperty(
         'grid-template-rows',
-        `repeat($userInput.value},1fr)`
+        `repeat(${userInput.value},1fr)`
     );
     for (let i=0; i < userInput.value* userInput.value;i++) {
         const div = document.createElement("div");
@@ -34,7 +36,8 @@ function updateCanvas () {
     etchContainer.appendChild(div);
     }
 }
-userInput.addEventListener('change', updateCanvas);
+
+submit.addEventListener('click', updateCanvas)
 
 reset.addEventListener('click', function() {
     etchContainer.innerHTML="";

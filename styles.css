@@ -31,7 +31,6 @@ button {
     display: inline-grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16,1fr);
-    background-color: aqua;
     width: 600px; height: 500px;
     border: 5px solid black;
 }
@@ -43,3 +42,4 @@ button {
 .square 
 {background-color: white;
 border: 1px solid black;}
+
